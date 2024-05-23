@@ -1,6 +1,14 @@
-.App{
+.App {
   background-image: url("https://s3-alpha-sig.figma.com/img/23d5/28c5/8f82d2c087c3c1808660cf2b4c6dc4a5?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X1JDUPdGRwOQf4bu-4D65LujBSPT9B3qT81IgQrsrF83rOmv30cPoh9d~qVuITPAKYW9J4L0trv3skVxAjyY6thEgPF-hHXv0qNUQDz-VWXllbttVP9-1923XP04PL3LKA5epEKUMdj1QecvpnvRaajAT43uFjGz4m6pSvKXqgockpfniFNLkV1JFJ-ZD5lL8Owjl8Z2BRY97KXLpcy06aHGfacrcDHueay0iTHpJy3su4C27BIHCwZ8aAIlkHZ-zZZxYYlxP8FYP0FBnVKJYc5dw0-jKHPJK3cnw7VcduGed5BVQ4xyrxViFCuZDueaT2ntYkIJ7lWMd3P8OlN23A__");
-  background-size:cover;
+  background-size: cover;
   height: 100vh;
-  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 32rem) {
+  .App {
+    background-position: -510px -150px;
+    width: 100vw;
+  }
 }

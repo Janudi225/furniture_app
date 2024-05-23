@@ -1,86 +1,84 @@
-
-nav{  
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
 }
 
-#title{
-    padding-left: 130px;
-    font-size:36px ;
-    margin: 28px;
-    font-weight:bold ;
-    color: white;
-    line-height: 56.66px;
+#title {
+  padding-left: 130px;
+  font-size: 36px;
+  margin: 28px;
+  font-weight: bold;
+  color: white;
+  line-height: 56.66px;
 }
 
-nav ul{
-    padding-right: 150px;
+nav ul {
+  padding-right: 150px;
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+nav ul li {
+  color: white;
+  margin: 0 2rem;
+  font-size: 16px;
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  right: 0px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 24px;
+}
+
+nav .menu span {
+  height: 0.2rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 34rem) {
+  nav .menu {
     display: flex;
-}
+  }
 
-li{
-    list-style: none;
-}
-
-nav ul li{
-    color: white;
-    margin: 0 2rem;
-    font-size: 16px;
-}
-
-nav .menu{
-    display: none;
-    position: absolute;
-    top: 2rem;
-    right: 0px;
+  nav {
     flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height:24px;
-}
+    align-items: start;
+    margin: 0 2rem;
+  }
 
-nav .menu span{
-    height: 0.2rem;
-    width:100%;
-    background-color: white;
-    border-radius: 0.2rem;
-}
+  #title {
+    font-size: 24px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
 
-@media(max-width:34rem){
-    nav .menu{
-        display: flex;
-    }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
 
-    nav{
-        flex-direction: column;
-        align-items: start;
-        margin:0 2rem;
-    }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0.2rem 0.5rem;
+  }
 
-    #title{
-        font-size: 24px;
-        margin-left: 0px;
-        padding-left: 0px;
-    }
-
-    nav ul{
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 0.25rem;
-    }
-
-    nav ul li{
-        width: 100%;
-        text-align: center;
-        margin: 0.2rem 0.5rem;
-    }
-    
-    nav ul.open{
-        display: flex;
-        background-color: rgb(255, 255, 255,0.2);
-        
-    }
+  nav ul.open {
+    display: flex;
+    background-color: rgb(255, 255, 255, 0.2);
+  }
 }
