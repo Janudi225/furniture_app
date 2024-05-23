@@ -1,0 +1,30 @@
+#section{
+    display: flex;
+}
+
+#single{
+    margin:2px;
+    
+}
+
+#menubar{
+    margin: 0px 100px ;
+    padding: 5px 0px;
+    color: #000;
+    display: flex;
+    background-color: aqua;
+    text-align: center;
+}
+
+#main{
+
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+#sub{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
